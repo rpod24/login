@@ -1,5 +1,5 @@
 module.exports = {
     devServer: {
-        proxy: 'https://login.jsohn.net',
+        port: 4000
     }
 }

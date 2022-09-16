@@ -44,22 +44,20 @@ h1 {
     font-weight: bold;
 }
 
-input {
+.text-input {
     border: none;
     border-radius: 6px;
     height: 25px;
-    width: 175px;
     background-color: var(--main-white);
     margin-bottom: 10px;
-} input:focus {
+} .text-input:focus {
     outline: 2px solid var(--main-hl-light);
 }
 
-button{
+.submit-button{
     height: 25px;
-    width: 50px;
     margin-right: 0.5em;
-    background-color: var(--main-white);
+    /* background-color: var(--main-white); */
     color: var(--main-dark-bg);
     border: none;
     border-radius: 8px;
@@ -70,7 +68,7 @@ button{
     transition-timing-function: ease;
     
 }
-button:active {
+.submit-button:active {
     background-color: invert(var(--main-white));
     color: invert(var(--main-dark-bg));
     transition-property: background-color, color;
@@ -78,5 +76,67 @@ button:active {
     
 }
 
+.clock-button{
+    height: 25px;
+    margin-right: 0.5em;
+    background-color: red;
+    color: var(--main-dark-bg);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    overflow: hidden;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    
+}
+.clock-button:active {
+    background-color: invert(var(--main-white));
+    transition-property: background-color, color;
+    transition-duration: 0s;
+    
+}
+
+
+.inline{
+    display: inline-block;
+}
+
+.SaveLogin {
+    display:flex;
+    align-items:center;
+    margin-bottom: 10px;
+}
+
+.SaveLogin div{
+    text-align: center;
+    height: 25px;
+}
+
+.SaveLogin div h3{
+    vertical-align: middle;
+    height: 25px;
+}
+
+.SaveLogin input {
+    border: none;
+    border-radius: 6px;
+    height: 20px;
+    width: 20px;
+    margin-left: 15px;
+    margin-top: 1.5px;
+    background-color: var(--main-white);
+}
+
+.timer_and_clock{
+    display:flex;
+    align-items:center;
+    margin-bottom: 10px;
+
+}
+
+.margin-bottom-15px{
+    margin-bottom: 15px;
+}
   /* not sure if I should add this or not...
   .cookie-consent-modal {} */

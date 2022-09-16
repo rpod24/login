@@ -10,6 +10,8 @@ class database{
     static last = "";
 
     static enter(student){
+        console.log("enter");
+        console.log(student);
         let stu = student;
         let r = new results();
        
@@ -29,6 +31,7 @@ class database{
     }
 
     static exit(student){
+        console.log("exit");
         let stu = student;
         let r = new results();
        
@@ -47,6 +50,7 @@ class database{
         stu.entry = constants.START;
         stu.exit = time.getTime();
         this.s.push(stu);
+        console.log(stu);
 
         return(r);    
     }

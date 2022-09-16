@@ -22,7 +22,11 @@ const job = schedule.scheduleJob(rule, () => {
 
 http
   .createServer(function (req, res) {
-    res.writeHead(200, { "Content-Type": "text/json" });
+    res.setHeader('Access-Control-Allow-Origin', '*');
+	res.setHeader('Access-Control-Request-Method', '*');
+	res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET');
+	res.setHeader('Access-Control-Allow-Headers', '*');
+    res.writeHead(200, { "Content-Type": "text/json",});
 
     let q = url.parse(req.url, true).query;
     const u = req.url.split("?")[0];
